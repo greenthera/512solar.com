@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy | 512 Solar — Austin, TX</title>
+    <meta
+      name="description"
+      content="Read 512 Solar's privacy policy to understand how we collect, use, and protect your personal information."
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://512solar.com/privacy-policy.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy | 512 Solar" />
+    <meta
+      property="og:description"
+      content="512 Solar's privacy policy: how we collect, use, and protect your personal data."
+    />
+    <meta
+      property="og:url"
+      content="https://512solar.com/privacy-policy.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --color-primary: #007dc6;
+        --color-primary-dark: #005f99;
+        --color-black: #0a0a0a;
+        --color-dark: #1a1a1a;
+        --color-gray: #555555;
+        --color-gray-light: #888888;
+        --color-bg-light: #f5f7f9;
+        --color-border: #e0e5ea;
+        --font-heading: "Montserrat", sans-serif;
+        --font-body: "Inter", sans-serif;
+        --fs-body: clamp(0.95rem, 1.4vw, 1.05rem);
+        --fs-small: 0.875rem;
+        --navbar-height: 68px;
+        --border-radius: 8px;
+        --transition-fast: 0.2s ease;
+        --transition-base: 0.3s ease;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: var(--font-body);
+        font-size: var(--fs-body);
+        color: var(--color-dark);
+        background: #fff;
+        line-height: 1.75;
+      }
+
+      a {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Skip link */
+      .skip-link {
+        position: absolute;
+        top: -100%;
+        left: 1rem;
+        background: var(--color-primary);
+        color: #fff;
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--border-radius);
+        font-weight: 600;
+        z-index: 10000;
+        transition: top var(--transition-fast);
+      }
+      .skip-link:focus {
+        top: 1rem;
+      }
+
+      :focus-visible {
+        outline: 3px solid var(--color-primary);
+        outline-offset: 3px;
+        border-radius: 4px;
+      }
+
+      /* Navbar */
+      .navbar {
+        position: sticky;
+        top: 0;
+        background: rgba(10, 10, 10, 0.97);
+        backdrop-filter: blur(12px);
+        height: var(--navbar-height);
+        display: flex;
+        align-items: center;
+        z-index: 100;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.25);
+      }
+
+      .navbar__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 clamp(1rem, 4vw, 2rem);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .navbar__logo img {
+        height: 40px;
+        width: auto;
+      }
+
+      .navbar__back {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: var(--fs-small);
+        font-family: var(--font-heading);
+        font-weight: 600;
+        transition: color var(--transition-fast);
+      }
+
+      .navbar__back:hover,
+      .navbar__back:focus-visible {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+
+      /* Page hero */
+      .page-hero {
+        background: linear-gradient(150deg, #060e18 0%, #0c2236 100%);
+        padding: 4rem 0 3.5rem;
+        text-align: center;
+      }
+
+      .page-hero h1 {
+        font-family: var(--font-heading);
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        font-weight: 800;
+        color: #fff;
+        margin-bottom: 0.75rem;
+      }
+
+      .page-hero p {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: var(--fs-small);
+      }
+
+      /* Content */
+      .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: clamp(2.5rem, 6vw, 4rem) clamp(1rem, 4vw, 2rem);
+      }
+
+      .content h2 {
+        font-family: var(--font-heading);
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--color-black);
+        margin-top: 2.25rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid rgba(0, 125, 198, 0.15);
+      }
+
+      .content h2:first-child {
+        margin-top: 0;
+      }
+
+      .content p {
+        color: var(--color-gray);
+        margin-bottom: 1rem;
+        line-height: 1.8;
+      }
+
+      .content ul {
+        list-style: none;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+      }
+
+      .content ul li {
+        color: var(--color-gray);
+        padding: 0.3rem 0 0.3rem 1.5rem;
+        position: relative;
+        line-height: 1.7;
+      }
+
+      .content ul li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: var(--color-primary);
+        font-weight: 700;
+      }
+
+      .content strong {
+        color: var(--color-dark);
+        font-weight: 600;
+      }
+
+      /* Footer */
+      .footer {
+        background: #060e18;
+        padding: 2rem 0;
+        text-align: center;
+      }
+
+      .footer__inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 clamp(1rem, 4vw, 2rem);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .footer__copyright {
+        font-size: var(--fs-small);
+        color: rgba(255, 255, 255, 0.36);
+      }
+
+      .footer__links {
+        display: flex;
+        gap: 1.5rem;
+      }
+
+      .footer__links a {
+        font-size: var(--fs-small);
+        color: rgba(255, 255, 255, 0.4);
+        transition: color var(--transition-fast);
+      }
+
+      .footer__links a:hover {
+        color: var(--color-primary);
+        text-decoration: none;
+      }
+
+      @media (max-width: 540px) {
+        .footer__inner {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navbar -->
+    <header role="banner">
+      <nav class="navbar" aria-label="Site navigation">
+        <div class="navbar__inner">
+          <a href="index.html" aria-label="512 Solar — return to homepage">
+            <img
+              src="images/logo.png"
+              alt="512 Solar logo"
+              width="100"
+              height="38"
+              loading="lazy"
+            />
+          </a>
+          <a
+            href="index.html"
+            class="navbar__back"
+            aria-label="Return to 512 Solar homepage"
+          >
+            ← Back to Home
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <div class="page-hero" role="banner">
+      <h1>Privacy Policy</h1>
+      <p>Last updated: January 19, 2026</p>
+    </div>
+
+    <!-- Main content -->
+    <main id="main-content">
+      <div class="content">
+        <p>
+          This Privacy Policy describes 512 Solar's policies and procedures on
+          the collection, use and disclosure of your information when you use
+          our service, and tells you about your privacy rights and how the law
+          protects you.
+        </p>
+        <p>
+          We use your personal data to provide and improve the Service. By using
+          the Service, you agree to the collection and use of information in
+          accordance with this Privacy Policy. 512 Solar is committed to
+          safeguarding the privacy of our users. We want to assure you that we
+          do not share your personal information with third parties. No personal
+          information, mobile number, or messaging consent information will be
+          shared with third parties or affiliates for marketing or promotional
+          purposes.
+        </p>
+
+        <h2>Information Collection</h2>
+        <p>
+          We collect only the information necessary to provide and improve our
+          services. This may include your name, email address, and phone number.
+          We do not sell, rent, or share this information with any third
+          parties.
+        </p>
+
+        <h2>How We Use Your Information</h2>
+        <p>
+          The information collected is used solely for communicating with you as
+          the intended party. We do not share or sell your personal information
+          with external parties for marketing or any other purposes.
+          Additionally, no mobile or messaging consent information will be
+          shared with third parties/affiliates for marketing/promotional
+          purposes. All the above categories exclude text messaging originator
+          opt-in data and consent; this information will not be shared with any
+          third parties.
+        </p>
+        <p>We may use personal data for the following purposes:</p>
+        <ul>
+          <li>
+            <strong>To provide and maintain our service,</strong> including to
+            monitor the usage of our service.
+          </li>
+          <li>
+            <strong>To manage your Account:</strong> to manage your registration
+            as a user of the Service. The Personal Data you provide can give you
+            access to different functionalities of the Service that are
+            available to you as a registered user.
+          </li>
+          <li>
+            <strong>For the performance of a contract:</strong> the development,
+            compliance and undertaking of the purchase contract for the
+            products, items or services you have purchased or of any other
+            contract with us through the Service.
+          </li>
+          <li>
+            <strong>To contact you:</strong> by email, telephone calls, SMS, or
+            other equivalent forms of electronic communication, such as a mobile
+            application's push notifications regarding updates or informative
+            communications related to the functionalities, products or
+            contracted services, including security updates, when necessary or
+            reasonable for their implementation.
+          </li>
+          <li>
+            <strong
+              >To provide you with news, special offers and general
+              information</strong
+            >
+            about other goods, services and events which we offer that are
+            similar to those you have already purchased or enquired about,
+            unless you have opted not to receive such information.
+          </li>
+          <li>
+            <strong>To manage your requests:</strong> to attend and manage your
+            requests to us.
+          </li>
+        </ul>
+        <p>
+          All messages you send through the Service, whether to us or other
+          users, are stored on our servers. 512 Solar employs servers and
+          services owned by third parties to retain these messages.
+        </p>
+
+        <h2>SMS Disclosure</h2>
+        <p>
+          By reaching us by SMS, you agree to receive recurring messages from
+          512 Solar. Message and data rates may apply. Message frequency depends
+          on your interactions and preferences. You can reply
+          <strong>STOP</strong> to opt-out of future messages or
+          <strong>HELP</strong>
+          for more information.
+        </p>
+        <p>
+          No mobile or messaging consent information will be shared with third
+          parties/affiliates for marketing/promotional purposes. All the above
+          categories exclude text messaging originator opt-in data and consent;
+          this information will not be shared with any third parties.
+        </p>
+
+        <h2>Disclosure of Your Information</h2>
+        <p>
+          512 Solar does not share any client data with third parties for
+          marketing, promotional purposes, or any other purposes. Your personal
+          information is kept confidential and is not disclosed to any outside
+          organizations, except as required by law or with your explicit
+          consent. We may disclose your Personal Information under the following
+          limited circumstances:
+        </p>
+        <ul>
+          <li>We have obtained your consent.</li>
+          <li>We need to enforce our Terms of Service.</li>
+          <li>
+            We share information with partners or affiliates that have signed
+            non-disclosure agreements with us only to provide you with a
+            specific service.
+          </li>
+          <li>
+            We may provide such information to a company controlled by or under
+            common control with 512 Solar for any purpose allowed by this
+            Policy.
+          </li>
+          <li>
+            We respond to subpoenas, court orders, or legal processes, or to
+            establish or exercise our legal rights, or the legal rights of
+            others, or defend against legal claims.
+          </li>
+          <li>
+            When we believe it is necessary to disclose Personal Information to
+            investigate, prevent, or take action regarding illegal activities,
+            suspected fraud, potential threats to anyone's physical safety,
+            violations of 512 Solar Terms of Service, or as otherwise required
+            by law.
+          </li>
+          <li>
+            We transfer Personal Information about you if 512 Solar or its
+            assets are acquired by or merged with another company.
+          </li>
+        </ul>
+        <p>
+          We may share aggregated, non-identifiable information with others
+          without further notice to you, such as the total number of people who
+          used the Service in a specific month or the total number of messages
+          sent during a particular period.
+        </p>
+
+        <h2>International Data Transfers</h2>
+        <p>
+          Your Personal Information may be transferred to and processed in
+          locations outside of your state, province, country, or other
+          governmental jurisdiction where the data protection laws may differ
+          from those in your jurisdiction. We take steps to ensure that your
+          data is handled securely and in line with this Policy, regardless of
+          where it is processed.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+          We retain your Personal Information only as long as necessary to
+          fulfill the purposes outlined in this Policy unless a longer retention
+          period is required or permitted by law. We will also retain and use
+          your Personal Information as necessary to comply with legal
+          obligations, resolve disputes, and enforce our agreements.
+        </p>
+
+        <h2>Cookies and Tracking Technologies</h2>
+        <p>
+          Our Service may use cookies and similar tracking technologies to
+          enhance your experience. Cookies are small text files placed on your
+          device to collect information about your activity on the Service. You
+          can control the use of cookies through your browser settings, but
+          disabling cookies may limit your ability to use certain features of
+          the page or Service.
+        </p>
+
+        <h2>Your Choices</h2>
+        <p>
+          You have the right to access, correct, or delete your information. If
+          you have any concerns or questions about your data, please contact us
+          at:
+        </p>
+        <ul>
+          <li>
+            <strong>Phone:</strong>
+            <a href="tel:+15128273775">(512) 827-3775</a>
+          </li>
+          <li>
+            <strong>Address:</strong> 1250 South Capital of Texas Highway, Bldg
+            3, Suite 400, Austin, TX
+          </li>
+        </ul>
+
+        <h2>Policy Changes</h2>
+        <p>
+          We may update our Privacy Policy from time to time. Any changes will
+          be communicated to you, and your continued use of our services implies
+          your acceptance of the updated policy. By using our services, you
+          agree to the terms outlined in this Privacy Policy.
+        </p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer__inner">
+        <p class="footer__copyright">
+          &copy; <span id="currentYear"></span> 512 Solar. All rights reserved.
+        </p>
+        <nav aria-label="Legal navigation" class="footer__links">
+          <a href="index.html">Home</a>
+          <a href="privacy-policy.html" aria-current="page">Privacy Policy</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
